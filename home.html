@@ -4,6 +4,9 @@
         <title>Home</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" type="text/css" href="css\style.css" />
+        <link rel="stylesheet" href="slick/slick.css" />
+        <link rel="stylesheet" href="slick/slick-theme.css" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
     </head>
     <body> 
     	<div class="contentt vh">
@@ -20,13 +23,61 @@
                     </a>
                 </li>
             </ul>
-            <div class="header_block"></header>
-                <div class="header_content home_img">
+            <div class="header_block">
+                <div class="header_content"></div>
+            </div></header>
+                
                     <div class="content">
-                        <div class="content1"></div>
+                        <div class="content1 home1">
+                        	 <div class="sl" dir="rtl">
+                                <div class="sl_slide"><img src="images\2.jpg" class="blog" /></div>
+                                <div class="sl_slide"><img src="images\3.jpg" class="blog" /></div>
+                                <div class="sl_slide"><img src="images\4.jpg" class="blog" /></div>
+                            </div>
+                        	<div class="konteiner line">
+                        <h4 class="related">RECENT WORKS</h4>
+                        <table class="hatching">
+                            <tr>
+                                <td class="hatching-gray"><span class="opasity">1</span></td>
+                            </tr>
+                        </table>
+                    </div>
+                        	<div class="portfolio_gallery">
+                        <div class="photo1">
+                            <a href="portfolio1.html" class="img_link"><img src="images/10.jpg" class="photos1" /></a>
+                            <div class="info">
+                                <span class="name">CHARACTER DESIGN</span><br />
+                                <span class="data">JUNE 15, 2020</span>
+                            </div>
+                        </div>
+                        <div class="photo1">
+                            <a href="portfolio1.html" class="img_link" style=" background-image: url(images/5.jpg);
+    background-position-y: 65%;"></a>
+                            <div class="info">
+                                <span class="name">BROCHURE DESIGN</span><br />
+                                <span class="data">JUNE 15, 2020</span>
+                            </div>
+                        </div>
+                       <div class="photo1">
+                            <a href="portfolio1.html" class="img_link" style=" background-image: url(images/11.jpg);
+    background-position: 45% 30%;"></a>
+                            <div class="info">
+                                <span class="name">SOCIALMEDIA BUTTONS</span><br />
+                                <span class="data">JUNE 15, 2020</span>
+                            </div>
+                        </div>
+                        <div class="photo1">
+                            <a href="portfolio1.html" class="img_link" style=" background-image: url(images/12.jpg);
+    background-position: 90% 30%;"></a>
+                            <div class="info">
+                                <span class="name">10 AMAZING WEBSITES</span><br />
+                                <span class="data">JUNE 15, 2020</span>
+                            </div>
+                        </div>
+                    </div>
+                        </div>
                     </div>
                 </div>
-            </div>
             <footer>
                 <div class="footer_block">
                     <div class="footer_content">
@@ -64,5 +115,27 @@
                 </div>
             </footer>
         </div>
+         <script src="http://yastatic.net/jquery/2.1.3/jquery.min.js"></script>
+        <script src="slick/slick.min.js"></script>
+
+        <script type="text/javascript">
+            $(document).ready(function () {
+                 $('.sl').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+  fade: true,
+  asNavFor: '.sl'
+});
+$('.sl').slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  asNavFor: '.sl',
+  dots: true,
+  centerMode: true,
+  focusOnSelect: true
+});
+            });
+        </script>
     </body>
 </html>

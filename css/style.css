@@ -9,11 +9,22 @@
 		text-align: center;
 		padding: 14px 16px;
 	}
-	header{
-		height: 20%;
-	}
 	.nav_menu{
 		float: right;
+	}
+	.menu{
+		float: left;
+		margin-top: 1%;
+	}
+	div.home1{
+		width: 65%;
+	}
+	.act_ive{
+		color: white;
+		background-color: #FF6037;
+	}
+	li.first:nth-child(1){
+		margin-right: 0;
 	}
 	li a:hover{
 		color: #FF6037;
@@ -449,18 +460,20 @@ img.slick-arrow{
 	display: inline-block;
 	position: relative;
 	margin-bottom: 30px;
+	padding: 1%;
 }
+
 .photos1{
 	width: 200px;
 	height: 150px;
 }
+
 .info{
 	border: 1px solid gray;
 	position: absolute;
 	border-top: none;
     font-weight: bold;
     font-size: small;
-    top: 150px;
     width: 178px;
     padding: 10px;
 }
@@ -479,7 +492,7 @@ img.slick-arrow{
   color: #FFF;
   font-size: 3em;
 }
-a.img_link { display: block; position: relative; }
+a.img_link { display: inline-flex; position: relative; }
 
 a.img_link:after { top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,.5); }
 .photos1{
